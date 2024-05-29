@@ -119,7 +119,7 @@ async function init() {
     try {
        startApi();
        await sleep(10000);
-       let target = 'http://www.hoven.com.br/lam_desc.php?id=80';
+       let target = 'http://testphp.vulnweb.com/artists.php?artist=1';
        await sqliStart(target)
     } catch (error) {
         console.error("Erro in start api:", error);
